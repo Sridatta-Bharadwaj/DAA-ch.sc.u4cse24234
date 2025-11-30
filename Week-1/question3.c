@@ -1,5 +1,3 @@
-//Write a program to find the sum of cubes if the 1st n natural numbers.
-
 #include <stdio.h>
 
 int sumofncu(int n){

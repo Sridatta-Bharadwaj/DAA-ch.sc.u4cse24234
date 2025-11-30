@@ -1,5 +1,3 @@
-//Write a program to find the factorial of a natural number using recursive functions.
-
 #include <stdio.h>
 
 int factorial(int n){

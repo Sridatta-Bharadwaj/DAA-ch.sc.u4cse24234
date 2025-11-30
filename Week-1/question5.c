@@ -1,4 +1,3 @@
-//Write a program to transpose a 3X3 matrix.
 #include <stdio.h>
 
 int main() {

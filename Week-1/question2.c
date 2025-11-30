@@ -1,5 +1,3 @@
-//Write a program to find the sum of squares of the 1st n natural numbers using user-defined functions.
-
 #include <stdio.h>
 
 int sumofnsq(int n){

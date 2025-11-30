@@ -1,5 +1,3 @@
-//Write a program to print the 1st n terms of the Fibonacci series using user-defined functions.
-
 #include <stdio.h>
 
 void printFibonacci(int n) {

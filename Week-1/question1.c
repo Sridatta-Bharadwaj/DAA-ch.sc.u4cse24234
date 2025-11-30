@@ -1,5 +1,3 @@
-// Write a program to find the sum of 1st n natural numbers using user-defined functions.
-
 #include <stdio.h>
 
 int sumofn(int n){
