@@ -28,8 +28,6 @@ This is derived from the arithmetic progression sum formula, which provides O(1)
 [📄 question1.c](./question1.c)
 
 ```c
-// Write a program to find the sum of 1st n natural numbers using user-defined functions.
-
 #include <stdio.h>
 
 int sumofn(int n){
@@ -51,10 +49,6 @@ int main(){
 
 ![Program 1 Output](./outputs/question1.png)
 
-```
-Enter the final number up to which the sum should be calculated: 10
-the sum of the first 10 natural numbers is: 55
-```
 
 ### 📊 Complexity Analysis
 
@@ -91,8 +85,6 @@ This formula calculates 1² + 2² + 3² + ... + n² directly without iteration.
 [📄 question2.c](./question2.c)
 
 ```c
-//Write a program to find the sum of squares of the 1st n natural numbers using user-defined functions.
-
 #include <stdio.h>
 
 int sumofnsq(int n){
@@ -114,10 +106,6 @@ int main(){
 
 ![Program 2 Output](./outputs/question2.png)
 
-```
-Enter the final number up to which the sum of squares should be calculated: 5
-the sum of the first 5 natural numbers is: 55
-```
 *(1² + 2² + 3² + 4² + 5² = 1 + 4 + 9 + 16 + 25 = 55)*
 
 ### 📊 Complexity Analysis
@@ -159,8 +147,6 @@ Interesting fact: Sum of cubes = (Sum of first n natural numbers)²
 [📄 question3.c](./question3.c)
 
 ```c
-//Write a program to find the sum of cubes if the 1st n natural numbers.
-
 #include <stdio.h>
 
 int sumofncu(int n){
@@ -182,10 +168,6 @@ int main(){
 
 ![Program 3 Output](./outputs/question3.png)
 
-```
-Enter the final number up to which the sum of cubes should be calculated: 4
-the sum of the first 4 natural numbers is: 100
-```
 *(1³ + 2³ + 3³ + 4³ = 1 + 8 + 27 + 64 = 100)*
 
 ### 📊 Complexity Analysis
@@ -225,8 +207,6 @@ Each recursive call reduces n by 1 until reaching the base case.
 [📄 question4.c](./question4.c)
 
 ```c
-//Write a program to find the factorial of a natural number using recursive functions.
-
 #include <stdio.h>
 
 int factorial(int n){
@@ -251,10 +231,6 @@ int main(){
 
 ![Program 4 Output](./outputs/question4.png)
 
-```
-Enter the number of which factorial is to be calculated: 5
-the factorial of 5 is 120
-```
 *(5! = 5 × 4 × 3 × 2 × 1 = 120)*
 
 ### 📊 Complexity Analysis
@@ -322,7 +298,6 @@ If A is the original matrix and Aᵀ is transpose:
 [📄 question5.c](./question5.c)
 
 ```c
-//Write a program to transpose a 3X3 matrix.
 #include <stdio.h>
 
 int main() {
@@ -356,18 +331,6 @@ int main() {
 ### 🖥️ Sample Output
 
 ![Program 5 Output](./outputs/question5.png)
-
-```
-Enter elements of a 3x3 matrix:
-1 2 3
-4 5 6
-7 8 9
-
-Transpose of the matrix:
-1 4 7
-2 5 8
-3 6 9
-```
 
 ### 📊 Complexity Analysis
 
@@ -431,8 +394,6 @@ Each term is the sum of the previous two terms.
 [📄 question6.c](./question6.c)
 
 ```c
-//Write a program to print the 1st n terms of the Fibonacci series using user-defined functions.
-
 #include <stdio.h>
 
 void printFibonacci(int n) {
@@ -463,11 +424,6 @@ int main() {
 ### 🖥️ Sample Output
 
 ![Program 6 Output](./outputs/question6.png)
-
-```
-Enter how many terms you want: 10
-Fibonacci Series: 0 1 1 2 3 5 8 13 21 34
-```
 
 ### 📊 Complexity Analysis
 
