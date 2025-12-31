@@ -50,11 +50,37 @@
 
 </details>
 
-<details>
-<summary>📁 <b>Week 3 - Coming Soon</b></summary>
+<details open>
+<summary>📁 <b>Week 3 - Graph Traversal Algorithms</b></summary>
 
-### Topics
-- To be updated
+### Topics Covered
+- Graph representation
+- Breadth-First Search (BFS)
+- Depth-First Search (DFS)
+- Queue and recursion implementation
+
+### Programs
+1. [Breadth-First Search (BFS)](./week-3/README.md#program-1-breadth-first-search-bfs)
+2. [Depth-First Search (DFS)](./week-3/README.md#program-2-depth-first-search-dfs)
+
+[📄 **View Full Week 3 Documentation & Analysis →**](./week-3/README.md)
+
+</details>
+
+<details open>
+<summary>📁 <b>Week 4 - Minimum Spanning Tree Algorithms</b></summary>
+
+### Topics Covered
+- Greedy algorithms
+- Minimum Spanning Tree (MST)
+- Union-Find data structure
+- Graph optimization
+
+### Programs
+1. [Kruskal's Algorithm](./week-4/README.md#program-1-kruskals-algorithm)
+2. [Prim's Algorithm](./week-4/README.md#program-2-prims-algorithm)
+
+[📄 **View Full Week 4 Documentation & Analysis →**](./week-4/README.md)
 
 </details>
 
@@ -76,13 +102,23 @@ DAA-ch.sc.u4cse24234/
 │   ├── question5.c       # Matrix transpose
 │   ├── question6.c       # Fibonacci series
 │   └── outputs/          # Program output screenshots
-└── Week-2/               
-    ├── README.md         # Week 2 detailed documentation
-    ├── bubble_sort.c     # Bubble sort implementation
-    ├── selection_sort.c  # Selection sort implementation
-    ├── insertion_sort.c  # Insertion sort implementation
-    ├── heap_sort.c       # Heap sort implementation
-    ├── bucket_sort.c     # Bucket sort implementation
+├── Week-2/               
+│   ├── README.md         # Week 2 detailed documentation
+│   ├── bubble_sort.c     # Bubble sort implementation
+│   ├── selection_sort.c  # Selection sort implementation
+│   ├── insertion_sort.c  # Insertion sort implementation
+│   ├── heap_sort.c       # Heap sort implementation
+│   ├── bucket_sort.c     # Bucket sort implementation
+│   └── outputs/          # Program output screenshots
+├── week-3/               
+│   ├── README.md         # Week 3 detailed documentation
+│   ├── bfs.c             # Breadth-First Search
+│   ├── dfs.c             # Depth-First Search
+│   └── outputs/          # Program output screenshots
+└── week-4/               
+    ├── README.md         # Week 4 detailed documentation
+    ├── kruskal.c         # Kruskal's MST algorithm
+    ├── prims.c           # Prim's MST algorithm
     └── outputs/          # Program output screenshots
 ```
 
@@ -128,6 +164,34 @@ gcc bucket_sort.c -o bucket_sort
 ./bubble_sort
 ```
 
+#### Week 3 Programs
+```bash
+# Navigate to week-3
+cd week-3
+
+# Compile graph traversal programs
+gcc bfs.c -o bfs
+gcc dfs.c -o dfs
+
+# Run
+./bfs
+./dfs
+```
+
+#### Week 4 Programs
+```bash
+# Navigate to week-4
+cd week-4
+
+# Compile MST programs
+gcc kruskal.c -o kruskal
+gcc prims.c -o prims
+
+# Run
+./kruskal
+./prims
+```
+
 ### Compile All Programs at Once
 ```bash
 # Week 1
@@ -146,6 +210,16 @@ gcc selection_sort.c -o selection
 gcc insertion_sort.c -o insertion
 gcc heap_sort.c -o heap
 gcc bucket_sort.c -o bucket
+
+# Week 3
+cd ../week-3
+gcc bfs.c -o bfs
+gcc dfs.c -o dfs
+
+# Week 4
+cd ../week-4
+gcc kruskal.c -o kruskal
+gcc prims.c -o prims
 ```
 
 ---
@@ -175,6 +249,22 @@ gcc bucket_sort.c -o bucket
 
 *Depends on internal sorting algorithm
 
+### Week 3 - Graph Traversal Algorithms
+
+| Algorithm | Time | Space | Type |
+|-----------|------|-------|------|
+| BFS | O(V+E) | O(V) | Queue-based |
+| DFS | O(V+E) | O(V) | Recursion/Stack |
+
+V = number of vertices, E = number of edges
+
+### Week 4 - Minimum Spanning Tree Algorithms
+
+| Algorithm | Time | Space | Type |
+|-----------|------|-------|------|
+| Kruskal's | O(E log E) | O(V+E) | Edge-based, Union-Find |
+| Prim's | O(V²) | O(V) | Vertex-based, Greedy |
+
 ---
 
 ## 🎯 Learning Outcomes
@@ -191,13 +281,38 @@ gcc bucket_sort.c -o bucket
 - In-place vs out-of-place sorting
 - Algorithm selection based on input characteristics
 
+### Week 3
+- Graph representation using adjacency matrix
+- BFS for shortest path in unweighted graphs
+- DFS for connected components and cycle detection
+- Queue and recursion implementation patterns
+
+### Week 4
+- Greedy algorithm paradigm
+- Minimum Spanning Tree concepts
+- Union-Find data structure with path compression
+- Comparison of edge-based vs vertex-based MST algorithms
+
 ---
 
 ## 📖 Quick Links
 
 - [Week 1 Full Documentation](./Week-1/README.md)
 - [Week 2 Full Documentation](./Week-2/README.md)
+- [Week 3 Full Documentation](./week-3/README.md)
+- [Week 4 Full Documentation](./week-4/README.md)
 
 ---
 
-**Last Updated:** December 2024
+## 📈 Progress Tracker
+
+- ✅ Week 1: Basic Algorithms & Complexity Analysis (6/6 programs)
+- ✅ Week 2: Sorting Algorithms (5/5 programs)
+- ✅ Week 3: Graph Traversal Algorithms (2/2 programs)
+- ✅ Week 4: Minimum Spanning Tree Algorithms (2/2 programs)
+
+**Total Programs Completed:** 15/15
+
+---
+
+**Last Updated:** December 2025
