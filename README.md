@@ -84,6 +84,24 @@
 
 </details>
 
+<details open>
+<summary>📁 <b>Week 5 - Divide and Conquer & Binary Search Trees</b></summary>
+
+### Topics Covered
+- Divide and conquer paradigm
+- Merge Sort and Quick Sort
+- Binary Search Tree (BST)
+- Tree traversals
+
+### Programs
+1. [Merge Sort](./week-5/README.md#program-1-merge-sort)
+2. [Quick Sort](./week-5/README.md#program-2-quick-sort)
+3. [Binary Search Tree Operations](./week-5/README.md#program-3-binary-search-tree-bst)
+
+[📄 **View Full Week 5 Documentation & Analysis →**](./week-5/README.md)
+
+</details>
+
 ---
 
 ## 📂 Repository Structure
@@ -115,10 +133,16 @@ DAA-ch.sc.u4cse24234/
 │   ├── bfs.c             # Breadth-First Search
 │   ├── dfs.c             # Depth-First Search
 │   └── outputs/          # Program output screenshots
-└── week-4/               
-    ├── README.md         # Week 4 detailed documentation
-    ├── kruskal.c         # Kruskal's MST algorithm
-    ├── prims.c           # Prim's MST algorithm
+├── week-4/               
+│   ├── README.md         # Week 4 detailed documentation
+│   ├── kruskal.c         # Kruskal's MST algorithm
+│   ├── prims.c           # Prim's MST algorithm
+│   └── outputs/          # Program output screenshots
+└── week-5/               
+    ├── README.md         # Week 5 detailed documentation
+    ├── mergesort.c       # Merge Sort implementation
+    ├── quicksort.c       # Quick Sort implementation
+    ├── bst.c             # Binary Search Tree operations
     └── outputs/          # Program output screenshots
 ```
 
@@ -192,6 +216,22 @@ gcc prims.c -o prims
 ./prims
 ```
 
+#### Week 5 Programs
+```bash
+# Navigate to week-5
+cd week-5
+
+# Compile divide and conquer programs
+gcc mergesort.c -o mergesort
+gcc quicksort.c -o quicksort
+gcc bst.c -o bst
+
+# Run
+./mergesort
+./quicksort
+./bst
+```
+
 ### Compile All Programs at Once
 ```bash
 # Week 1
@@ -220,6 +260,12 @@ gcc dfs.c -o dfs
 cd ../week-4
 gcc kruskal.c -o kruskal
 gcc prims.c -o prims
+
+# Week 5
+cd ../week-5
+gcc mergesort.c -o mergesort
+gcc quicksort.c -o quicksort
+gcc bst.c -o bst
 ```
 
 ---
@@ -265,6 +311,16 @@ V = number of vertices, E = number of edges
 | Kruskal's | O(E log E) | O(V+E) | Edge-based, Union-Find |
 | Prim's | O(V²) | O(V) | Vertex-based, Greedy |
 
+### Week 5 - Divide and Conquer & Trees
+
+| Algorithm/Structure | Best | Average | Worst | Space | Type |
+|-------------------|------|---------|-------|-------|------|
+| Merge Sort | O(n log n) | O(n log n) | O(n log n) | O(n) | Stable |
+| Quick Sort | O(n log n) | O(n log n) | O(n²) | O(log n) | Unstable |
+| BST Insert | O(log n) | O(log n) | O(n) | O(n) | Tree |
+| BST Search | O(log n) | O(log n) | O(n) | O(1) | Tree |
+| BST Delete | O(log n) | O(log n) | O(n) | O(1) | Tree |
+
 ---
 
 ## 🎯 Learning Outcomes
@@ -293,6 +349,13 @@ V = number of vertices, E = number of edges
 - Union-Find data structure with path compression
 - Comparison of edge-based vs vertex-based MST algorithms
 
+### Week 5
+- Divide and conquer strategy
+- Merge Sort: guaranteed O(n log n) with extra space
+- Quick Sort: in-place sorting with average O(n log n)
+- Binary Search Tree: dynamic set operations
+- Tree traversal techniques (inorder, preorder, postorder)
+
 ---
 
 ## 📖 Quick Links
@@ -301,6 +364,7 @@ V = number of vertices, E = number of edges
 - [Week 2 Full Documentation](./Week-2/README.md)
 - [Week 3 Full Documentation](./week-3/README.md)
 - [Week 4 Full Documentation](./week-4/README.md)
+- [Week 5 Full Documentation](./week-5/README.md)
 
 ---
 
@@ -310,9 +374,10 @@ V = number of vertices, E = number of edges
 - ✅ Week 2: Sorting Algorithms (5/5 programs)
 - ✅ Week 3: Graph Traversal Algorithms (2/2 programs)
 - ✅ Week 4: Minimum Spanning Tree Algorithms (2/2 programs)
+- ✅ Week 5: Divide and Conquer & BST (3/3 programs)
 
-**Total Programs Completed:** 15/15
+**Total Programs Completed:** 18/18
 
 ---
 
-**Last Updated:** December 2025
+**Last Updated:** January 2026
