@@ -102,6 +102,23 @@
 
 </details>
 
+<details open>
+<summary>📁 <b>Week 6 - Self-Balancing Binary Search Trees</b></summary>
+
+### Topics Covered
+- AVL Tree — height-balanced BST
+- Red-Black Tree — color-balanced BST
+- Tree rotations (LL, RR, LR, RL)
+- Recoloring and rebalancing strategies
+
+### Programs
+1. [AVL Tree](./week-6/README.md#program-1-avl-tree)
+2. [Red-Black Tree](./week-6/README.md#program-2-red-black-tree)
+
+[📄 **View Full Week 6 Documentation & Analysis →**](./week-6/README.md)
+
+</details>
+
 ---
 
 ## 📂 Repository Structure
@@ -138,11 +155,16 @@ DAA-ch.sc.u4cse24234/
 │   ├── kruskal.c         # Kruskal's MST algorithm
 │   ├── prims.c           # Prim's MST algorithm
 │   └── outputs/          # Program output screenshots
-└── week-5/               
-    ├── README.md         # Week 5 detailed documentation
-    ├── mergesort.c       # Merge Sort implementation
-    ├── quicksort.c       # Quick Sort implementation
-    ├── bst.c             # Binary Search Tree operations
+├── week-5/               
+│   ├── README.md         # Week 5 detailed documentation
+│   ├── mergesort.c       # Merge Sort implementation
+│   ├── quicksort.c       # Quick Sort implementation
+│   ├── bst.c             # Binary Search Tree operations
+│   └── outputs/          # Program output screenshots
+└── week-6/               
+    ├── README.md         # Week 6 detailed documentation
+    ├── avl_tree.c        # AVL Tree implementation
+    ├── red_black_trees.c # Red-Black Tree implementation
     └── outputs/          # Program output screenshots
 ```
 
@@ -159,113 +181,58 @@ DAA-ch.sc.u4cse24234/
 
 #### Week 1 Programs
 ```bash
-# Navigate to Week-1
 cd Week-1
-
-# Compile any program (example: question1.c)
 gcc question1.c -o question1
-
-# Run the executable
 ./question1
-
-# Or on Windows
-question1.exe
 ```
 
 #### Week 2 Programs
 ```bash
-# Navigate to Week-2
 cd Week-2
-
-# Compile any sorting program
 gcc bubble_sort.c -o bubble_sort
 gcc selection_sort.c -o selection_sort
 gcc insertion_sort.c -o insertion_sort
 gcc heap_sort.c -o heap_sort
 gcc bucket_sort.c -o bucket_sort
-
-# Run
 ./bubble_sort
 ```
 
 #### Week 3 Programs
 ```bash
-# Navigate to week-3
 cd week-3
-
-# Compile graph traversal programs
 gcc bfs.c -o bfs
 gcc dfs.c -o dfs
-
-# Run
 ./bfs
 ./dfs
 ```
 
 #### Week 4 Programs
 ```bash
-# Navigate to week-4
 cd week-4
-
-# Compile MST programs
 gcc kruskal.c -o kruskal
 gcc prims.c -o prims
-
-# Run
 ./kruskal
 ./prims
 ```
 
 #### Week 5 Programs
 ```bash
-# Navigate to week-5
 cd week-5
-
-# Compile divide and conquer programs
 gcc mergesort.c -o mergesort
 gcc quicksort.c -o quicksort
 gcc bst.c -o bst
-
-# Run
 ./mergesort
 ./quicksort
 ./bst
 ```
 
-### Compile All Programs at Once
+#### Week 6 Programs
 ```bash
-# Week 1
-cd Week-1
-gcc question1.c -o q1
-gcc question2.c -o q2
-gcc question3.c -o q3
-gcc question4.c -o q4
-gcc question5.c -o q5
-gcc question6.c -o q6
-
-# Week 2
-cd ../Week-2
-gcc bubble_sort.c -o bubble
-gcc selection_sort.c -o selection
-gcc insertion_sort.c -o insertion
-gcc heap_sort.c -o heap
-gcc bucket_sort.c -o bucket
-
-# Week 3
-cd ../week-3
-gcc bfs.c -o bfs
-gcc dfs.c -o dfs
-
-# Week 4
-cd ../week-4
-gcc kruskal.c -o kruskal
-gcc prims.c -o prims
-
-# Week 5
-cd ../week-5
-gcc mergesort.c -o mergesort
-gcc quicksort.c -o quicksort
-gcc bst.c -o bst
+cd week-6
+gcc avl_tree.c -o avl_tree
+gcc red_black_trees.c -o red_black_trees
+./avl_tree
+./red_black_trees
 ```
 
 ---
@@ -321,6 +288,13 @@ V = number of vertices, E = number of edges
 | BST Search | O(log n) | O(log n) | O(n) | O(1) | Tree |
 | BST Delete | O(log n) | O(log n) | O(n) | O(1) | Tree |
 
+### Week 6 - Self-Balancing Binary Search Trees
+
+| Structure | Insert | Delete | Search | Space | Balance Guarantee |
+|-----------|--------|--------|--------|-------|-------------------|
+| AVL Tree | O(log n) | O(log n) | O(log n) | O(n) | Height diff ≤ 1 |
+| Red-Black Tree | O(log n) | O(log n) | O(log n) | O(n) | Height ≤ 2log(n+1) |
+
 ---
 
 ## 🎯 Learning Outcomes
@@ -356,6 +330,13 @@ V = number of vertices, E = number of edges
 - Binary Search Tree: dynamic set operations
 - Tree traversal techniques (inorder, preorder, postorder)
 
+### Week 6
+- Self-balancing BST concepts and motivation
+- AVL rotations: LL, RR, LR, RL cases
+- Red-Black Tree properties and recoloring strategy
+- Trade-offs between AVL and Red-Black Trees
+- Real-world usage of balanced trees in standard libraries
+
 ---
 
 ## 📖 Quick Links
@@ -365,6 +346,7 @@ V = number of vertices, E = number of edges
 - [Week 3 Full Documentation](./week-3/README.md)
 - [Week 4 Full Documentation](./week-4/README.md)
 - [Week 5 Full Documentation](./week-5/README.md)
+- [Week 6 Full Documentation](./week-6/README.md)
 
 ---
 
@@ -375,8 +357,9 @@ V = number of vertices, E = number of edges
 - ✅ Week 3: Graph Traversal Algorithms (2/2 programs)
 - ✅ Week 4: Minimum Spanning Tree Algorithms (2/2 programs)
 - ✅ Week 5: Divide and Conquer & BST (3/3 programs)
+- ✅ Week 6: Self-Balancing Binary Search Trees (2/2 programs)
 
-**Total Programs Completed:** 18/18
+**Total Programs Completed:** 20/20
 
 ---
 
