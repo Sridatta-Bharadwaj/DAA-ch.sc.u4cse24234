@@ -119,6 +119,23 @@
 
 </details>
 
+<details open>
+<summary>📁 <b>Week 7 - Quick Sort Variants & Quick Select</b></summary>
+
+### Topics Covered
+- Quick Sort with different pivot strategies
+- Last element, first element, and median-of-three pivots
+- Quick Select algorithm
+- k-th smallest element in O(n) average time
+
+### Programs
+1. [Quick Sort with Three Different Pivots](./week-7/README.md#program-1-quick-sort-with-three-different-pivots)
+2. [Quick Select](./week-7/README.md#program-2-quick-select)
+
+[📄 **View Full Week 7 Documentation & Analysis →**](./week-7/README.md)
+
+</details>
+
 ---
 
 ## 📂 Repository Structure
@@ -161,10 +178,15 @@ DAA-ch.sc.u4cse24234/
 │   ├── quicksort.c       # Quick Sort implementation
 │   ├── bst.c             # Binary Search Tree operations
 │   └── outputs/          # Program output screenshots
-└── week-6/               
-    ├── README.md         # Week 6 detailed documentation
-    ├── avl_tree.c        # AVL Tree implementation
-    ├── red_black_trees.c # Red-Black Tree implementation
+├── week-6/               
+│   ├── README.md         # Week 6 detailed documentation
+│   ├── avl_tree.c        # AVL Tree implementation
+│   ├── red_black_trees.c # Red-Black Tree implementation
+│   └── outputs/          # Program output screenshots
+└── week-7/               
+    ├── README.md         # Week 7 detailed documentation
+    ├── quick_sort_pivots.c # Quick Sort with three pivot strategies
+    ├── quick_select.c    # Quick Select implementation
     └── outputs/          # Program output screenshots
 ```
 
@@ -235,6 +257,15 @@ gcc red_black_trees.c -o red_black_trees
 ./red_black_trees
 ```
 
+#### Week 7 Programs
+```bash
+cd week-7
+gcc quick_sort_pivots.c -o quick_sort_pivots
+gcc quick_select.c -o quick_select
+./quick_sort_pivots
+./quick_select
+```
+
 ---
 
 ## 📊 Quick Complexity Reference
@@ -295,6 +326,15 @@ V = number of vertices, E = number of edges
 | AVL Tree | O(log n) | O(log n) | O(log n) | O(n) | Height diff ≤ 1 |
 | Red-Black Tree | O(log n) | O(log n) | O(log n) | O(n) | Height ≤ 2log(n+1) |
 
+### Week 7 - Quick Sort Variants & Quick Select
+
+| Algorithm | Best | Average | Worst | Space | Notes |
+|-----------|------|---------|-------|-------|-------|
+| Quick Sort (Last pivot) | O(n log n) | O(n log n) | O(n²) | O(log n) | Worst on sorted input |
+| Quick Sort (First pivot) | O(n log n) | O(n log n) | O(n²) | O(log n) | Worst on sorted input |
+| Quick Sort (Median-of-3) | O(n log n) | O(n log n) | O(n²) | O(log n) | Best practical pivot |
+| Quick Select | O(n) | O(n) | O(n²) | O(log n) | k-th smallest element |
+
 ---
 
 ## 🎯 Learning Outcomes
@@ -337,6 +377,12 @@ V = number of vertices, E = number of edges
 - Trade-offs between AVL and Red-Black Trees
 - Real-world usage of balanced trees in standard libraries
 
+### Week 7
+- Impact of pivot selection on Quick Sort performance
+- Median-of-three as a practical improvement over naive pivot choice
+- Quick Select: deriving a linear-time selection algorithm from Quick Sort
+- Trade-off between sorting the full array vs finding the k-th element
+
 ---
 
 ## 📖 Quick Links
@@ -347,6 +393,7 @@ V = number of vertices, E = number of edges
 - [Week 4 Full Documentation](./week-4/README.md)
 - [Week 5 Full Documentation](./week-5/README.md)
 - [Week 6 Full Documentation](./week-6/README.md)
+- [Week 7 Full Documentation](./week-7/README.md)
 
 ---
 
@@ -358,8 +405,9 @@ V = number of vertices, E = number of edges
 - ✅ Week 4: Minimum Spanning Tree Algorithms (2/2 programs)
 - ✅ Week 5: Divide and Conquer & BST (3/3 programs)
 - ✅ Week 6: Self-Balancing Binary Search Trees (2/2 programs)
+- ✅ Week 7: Quick Sort Variants & Quick Select (2/2 programs)
 
-**Total Programs Completed:** 20/20
+**Total Programs Completed:** 22/22
 
 ---
 
