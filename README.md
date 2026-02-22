@@ -136,6 +136,23 @@
 
 </details>
 
+<details open>
+<summary>📁 <b>Week 8 - Greedy Algorithms: Job Sequencing & Huffman Coding</b></summary>
+
+### Topics Covered
+- Job Sequencing with Deadlines
+- Greedy slot assignment strategy
+- Huffman Coding for data compression
+- Min-heap based priority queue
+
+### Programs
+1. [Job Sequencing with Deadlines](./week-8/README.md#program-1-job-sequencing-with-deadlines)
+2. [Huffman Coding](./week-8/README.md#program-2-huffman-coding)
+
+[📄 **View Full Week 8 Documentation & Analysis →**](./week-8/README.md)
+
+</details>
+
 ---
 
 ## 📂 Repository Structure
@@ -183,10 +200,15 @@ DAA-ch.sc.u4cse24234/
 │   ├── avl_tree.c        # AVL Tree implementation
 │   ├── red_black_trees.c # Red-Black Tree implementation
 │   └── outputs/          # Program output screenshots
-└── week-7/               
-    ├── README.md         # Week 7 detailed documentation
-    ├── quick_sort_pivots.c # Quick Sort with three pivot strategies
-    ├── quick_select.c    # Quick Select implementation
+├── week-7/               
+│   ├── README.md         # Week 7 detailed documentation
+│   ├── quick_sort_pivots.c # Quick Sort with three pivot strategies
+│   ├── quick_select.c    # Quick Select implementation
+│   └── outputs/          # Program output screenshots
+└── week-8/               
+    ├── README.md         # Week 8 detailed documentation
+    ├── job_sequencing.c  # Job Sequencing with Deadlines
+    ├── huffman.c         # Huffman Coding implementation
     └── outputs/          # Program output screenshots
 ```
 
@@ -266,6 +288,15 @@ gcc quick_select.c -o quick_select
 ./quick_select
 ```
 
+#### Week 8 Programs
+```bash
+cd week-8
+gcc job_sequencing.c -o job_sequencing
+gcc huffman.c -o huffman
+./job_sequencing
+./huffman
+```
+
 ---
 
 ## 📊 Quick Complexity Reference
@@ -335,6 +366,15 @@ V = number of vertices, E = number of edges
 | Quick Sort (Median-of-3) | O(n log n) | O(n log n) | O(n²) | O(log n) | Best practical pivot |
 | Quick Select | O(n) | O(n) | O(n²) | O(log n) | k-th smallest element |
 
+### Week 8 - Greedy Algorithms
+
+| Algorithm | Time | Space | Output |
+|-----------|------|-------|--------|
+| Job Sequencing | O(n × d) | O(n + d) | Max profit schedule |
+| Huffman Coding | O(n + k log k) | O(k log k) | Optimal prefix-free codes |
+
+n = number of jobs/characters, d = max deadline, k = unique characters
+
 ---
 
 ## 🎯 Learning Outcomes
@@ -383,6 +423,13 @@ V = number of vertices, E = number of edges
 - Quick Select: deriving a linear-time selection algorithm from Quick Sort
 - Trade-off between sorting the full array vs finding the k-th element
 
+### Week 8
+- Greedy algorithm design and proof of optimality
+- Job Sequencing: latest-slot assignment to maximise profit
+- Huffman Coding: variable-length prefix-free codes for compression
+- Min-heap as an efficient priority queue for tree construction
+- Real-world applications: CPU scheduling, ZIP/JPEG compression
+
 ---
 
 ## 📖 Quick Links
@@ -394,6 +441,7 @@ V = number of vertices, E = number of edges
 - [Week 5 Full Documentation](./week-5/README.md)
 - [Week 6 Full Documentation](./week-6/README.md)
 - [Week 7 Full Documentation](./week-7/README.md)
+- [Week 8 Full Documentation](./week-8/README.md)
 
 ---
 
@@ -406,9 +454,10 @@ V = number of vertices, E = number of edges
 - ✅ Week 5: Divide and Conquer & BST (3/3 programs)
 - ✅ Week 6: Self-Balancing Binary Search Trees (2/2 programs)
 - ✅ Week 7: Quick Sort Variants & Quick Select (2/2 programs)
+- ✅ Week 8: Greedy Algorithms — Job Sequencing & Huffman Coding (2/2 programs)
 
-**Total Programs Completed:** 22/22
+**Total Programs Completed:** 24/24
 
 ---
 
-**Last Updated:** January 2026
+**Last Updated:** February 2026
